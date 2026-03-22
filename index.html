@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bio Sites | Criação de Sites Profissionais</title>
+  <style>
+    * {margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif;}
+    body {background:#f9f9f9; color:#333; line-height:1.6;}
+    a {text-decoration:none; color: inherit;}
+    img {max-width:100%; display:block; border-radius:10px;}
+
+    /* Header */
+    header {display:flex; justify-content:space-between; align-items:center; padding:15px 20px; background:#fff; position:sticky; top:0; z-index:100; box-shadow:0 2px 5px rgba(0,0,0,0.1);}
+    header nav a {margin-left:15px; font-weight:bold; color:#333; font-size:0.9rem;}
+    header nav a:hover {color:#007BFF;}
+    header img {width:120px;}
+
+    /* Hero */
+    .hero {text-align:center; padding:50px 15px; background:#e6f0ff;}
+    .hero img {margin:20px auto; width:100%; max-width:400px;}
+    .hero h1 {font-size:1.8rem; margin-bottom:20px; color:#007BFF;}
+    .hero p {font-size:1rem; margin-bottom:20px;}
+    .hero .btn {padding:12px 25px; background:#007BFF; color:#fff; border:none; cursor:pointer; font-weight:bold; border-radius:5px;}
+    .hero .btn:hover {background:#0056b3;}
+
+    /* Seções */
+    section {padding:40px 15px; max-width:1000px; margin:0 auto;}
+    section h2 {text-align:center; font-size:1.6rem; margin-bottom:30px; color:#007BFF;}
+    .sobre-nos, .servicos, .portfolio, .clientes, .contato {background:#fff; border-radius:10px; padding:25px; box-shadow:0 2px 10px rgba(0,0,0,0.05); margin-bottom:30px;}
+
+    /* Sobre nós */
+    .sobre-nos img {width:100%; margin-bottom:15px;}
+    .sobre-nos p {font-size:0.95rem; margin-bottom:10px;}
+    .diferenciais {display:flex; flex-direction:column; align-items:center; margin-top:20px;}
+    .diferenciais div {text-align:center; margin-bottom:15px;}
+    .diferenciais img {width:50px; margin-bottom:8px;}
+
+    /* Serviços */
+    .servicos-container {display:flex; flex-direction:column; align-items:center;}
+    .servico {width:95%; background:#f1f5f9; margin:15px 0; padding:20px; border-radius:10px; text-align:left; box-shadow:0 2px 5px rgba(0,0,0,0.05);}
+    .servico img {border-radius:10px; margin-bottom:10px;}
+    .servico h3 {margin-bottom:10px; color:#007BFF;}
+    .servico p {margin-bottom:10px; font-size:0.95rem;}
+    .servico span {font-weight:bold; color:#333; font-size:1.1rem; display:block; margin-top:10px;}
+
+    /* Portfólio */
+    .portfolio-container {display:flex; flex-direction:column; align-items:center;}
+    .portfolio-item {width:95%; margin:10px 0; overflow:hidden; border-radius:10px; box-shadow:0 2px 10px rgba(0,0,0,0.05);}
+    .portfolio-item:hover {transform:scale(1.02); transition:0.3s;}
+
+    /* Clientes */
+    .clientes-container {display:flex; flex-direction:column; align-items:center;}
+    .cliente {width:90%; background:#f1f5f9; margin:10px 0; padding:15px; border-radius:10px; text-align:center; box-shadow:0 2px 5px rgba(0,0,0,0.05);}
+    .cliente img {border-radius:50%; width:80px; margin-bottom:10px;}
+    .cliente p {font-style:italic; font-size:0.9rem;}
+
+    /* Contato */
+    .contato {text-align:center;}
+    .contato p {margin-bottom:15px;}
+    .contato a {display:inline-block; margin:10px; padding:12px 20px; border-radius:5px; font-weight:bold;}
+    .contato a.whatsapp {background:#25D366; color:#fff;}
+    .contato a.instagram {background:#E1306C; color:#fff;}
+    .contato a:hover {opacity:0.9;}
+
+    /* Botão WhatsApp flutuante */
+    .whatsapp-btn {position:fixed; bottom:20px; right:20px; z-index:100; background:#25D366; width:60px; height:60px; border-radius:50%; display:flex; justify-content:center; align-items:center; cursor:pointer; box-shadow:0 2px 10px rgba(0,0,0,0.3);}
+    .whatsapp-btn img {width:35px;}
+
+    /* Rodapé */
+    footer {text-align:center; padding:20px; background:#007BFF; color:#fff; font-size:0.9rem;}
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="https://i.postimg.cc/9Q5KMJ2n/1774218831580.png" alt="Bio Sites Logo">
+    <nav>
+      <a href="#quem-somos">Quem Somos</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#portfolio">Portfólio</a>
+      <a href="#clientes">Clientes</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Transforme seu negócio online com sites profissionais e modernos</h1>
+    <p>Na Bio Sites, oferecemos soluções completas de webdesign, e-commerce e páginas de captura, totalmente otimizadas para conversão, com hospedagem inclusa e conteúdo de alto impacto criado com inteligência artificial. Nosso objetivo é criar sites rápidos, seguros e modernos, que convertam visitantes em clientes reais e aumentem suas vendas.</p>
+    <img src="https://i.postimg.cc/htLw7TPq/1774215480948.png" alt="Home Bio Sites">
+    <button class="btn" onclick="window.open('https://wa.me/5561996213467', '_blank')">Fale Conosco</button>
+  </section>
+
+  <!-- Quem Somos -->
+  <section id="quem-somos" class="sobre-nos">
+    <h2>Quem Somos</h2>
+    <img src="https://i.postimg.cc/6prSGn5x/1774215565478.png" alt="Sobre Nós">
+    <p>A Bio Sites é especializada em criar sites profissionais e e-commerces totalmente funcionais, rápidos e responsivos. Nosso foco é entregar soluções completas que proporcionem uma presença online forte e confiável para o seu negócio.</p>
+    <p>Combinamos webdesign moderno, marketing digital inteligente e conteúdo otimizado com IA para criar projetos que aumentam a conversão de visitantes em clientes. Nossa equipe trabalha com atenção a cada detalhe, garantindo usabilidade, estética e funcionalidade.</p>
+    <p>Além disso, oferecemos hospedagem inclusa sem mensalidades escondidas, suporte contínuo e campanhas de marketing otimizadas, garantindo que seu site esteja sempre atualizado e funcionando perfeitamente. Cada projeto é pensado para gerar resultados reais e mensuráveis.</p>
+    <p>Nosso objetivo é não apenas entregar um site bonito, mas uma ferramenta de negócios poderosa que se adapta ao crescimento da sua empresa. Trabalhamos com tecnologia de ponta e práticas modernas de SEO para que seu site seja facilmente encontrado no Google e outros mecanismos de pesquisa.</p>
+    <p>Confiança, transparência e profissionalismo são valores que aplicamos em cada etapa do projeto, desde o planejamento até a entrega final. Queremos que nossos clientes se sintam seguros e satisfeitos, sabendo que seu investimento traz retorno e visibilidade reais.</p>
+    <div class="diferenciais">
+      <div>
+        <img src="https://i.postimg.cc/L8KwXNRS/1774218159606.png" alt="Suporte Incluso">
+        <p>Suporte Incluso</p>
+      </div>
+      <div>
+        <img src="https://i.postimg.cc/8zQ95tDg/1774218164079.png" alt="Hospedagem Garantida">
+        <p>Hospedagem Garantida</p>
+      </div>
+      <div>
+        <img src="https://i.postimg.cc/sgdqXwyF/1774218434974.png" alt="Campanhas Otimizadas">
+        <p>Campanhas Otimizadas</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Serviços -->
+  <section id="servicos" class="servicos">
+    <h2>O Que Oferecemos</h2>
+    <div class="servicos-container">
+      <div class="servico">
+        <img src="https://i.postimg.cc/L8KwXNRS/1774218159606.png" alt="Site Profissional">
+        <h3>Site Profissional - R$600</h3>
+        <p>Nossos sites profissionais são pensados para empresas que desejam ter uma presença online forte, confiável e moderna. Cada página é otimizada para velocidade, responsividade e experiência do usuário, garantindo que visitantes se sintam seguros e bem informados.</p>
+        <p>Além do design moderno, criamos conteúdo estratégico com inteligência artificial, pensando em SEO e na conversão de visitantes em clientes. Cada site inclui hospedagem inclusa e suporte contínuo, sem taxas escondidas ou mensalidades extras.</p>
+        <p>Você terá total controle sobre o seu site, podendo atualizar textos, imagens e informações facilmente. Nossos projetos priorizam a simplicidade, velocidade e estética, garantindo que o site fique bonito tanto no computador quanto em dispositivos móveis.</p>
+        <p>Ideal para negócios que desejam destacar seus serviços e produtos, comunicar sua marca de forma clara e profissional, e transmitir confiança aos visitantes desde o primeiro clique. Garantimos um produto final que impressiona e converte.</p>
+        <p>Nossos sites profissionais são a ferramenta perfeita para empresas que querem crescer no mundo digital sem complicações, com um investimento único e retorno de longo prazo.</p>
+      </div>
+
+      <div class="servico">
+        <img src="https://i.postimg.cc/8zQ95tDg/1774218164079.png" alt="E-commerce">
+        <h3>E-commerce - R$1.400</h3>
+        <p>Nosso serviço de e-commerce oferece lojas online completas, com integração de pagamentos, carrinho de compras e gerenciamento de produtos fácil e intuitivo. Cada detalhe é planejado para maximizar vendas e proporcionar uma experiência agradável ao cliente.</p>
+        <p>Além do design responsivo, criamos conteúdo otimizado com IA e aplicamos técnicas de marketing digital para aumentar conversões e atrair clientes de todo o Brasil. A hospedagem está inclusa, garantindo que sua loja fique sempre online e rápida.</p>
+        <p>O sistema é totalmente seguro, com proteção contra fraudes e backups automáticos. Você terá acesso fácil para atualizar produtos, promoções e informações da loja, sem depender de terceiros. Garantimos um e-commerce funcional, moderno e confiável.</p>
+        <p>Perfeito para empresas que querem expandir suas vendas online, aumentar o alcance da marca e oferecer uma experiência de compra segura e prática aos clientes. Cada loja é criada com foco em resultados reais e retorno de investimento.</p>
+        <p>Nosso objetivo é entregar uma loja completa, bonita e profissional, pronta para operar desde o primeiro dia, com suporte contínuo para garantir que você aproveite todas as oportunidades do mercado digital.</p>
+      </div>
+
+      <div class="servico">
+        <img src="https://i.postimg.cc/sgdqXwyF/1774218434974.png" alt="Lead Page">
+        <h3>Lead Page - R$150</h3>
+        <p>Nossas Lead Pages são páginas focadas em captura de leads e geração de contatos qualificados para o seu negócio. Cada página é projetada com design atraente, texto estratégico e elementos visuais que incentivam o visitante a fornecer informações de contato.</p>
+        <p>O conteúdo é otimizado com inteligência artificial para criar impacto e gerar confiança, aumentando a probabilidade de conversão. Essas páginas são ideais para campanhas de marketing, promoções, lançamentos de produtos ou serviços.</p>
+        <p>Cada Lead Page é responsiva e funciona perfeitamente em celulares e tablets, garantindo que você alcance clientes em qualquer dispositivo. Integramos botões de ação, formulários de contato e chamadas para WhatsApp, facilitando a comunicação imediata.</p>
+        <p>Essas páginas são perfeitas para profissionais que querem expandir sua base de contatos, construir listas de e-mails ou WhatsApp e transformar visitantes em clientes de forma rápida e eficiente.</p>
+        <p>O investimento é acessível e o retorno pode ser imediato, especialmente quando integrado a campanhas de anúncios no Google ou redes sociais. Garantimos páginas profissionais, rápidas e com design moderno.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfólio -->
+  <section id="portfolio" class="portfolio">
+    <h2>Portfólio</h2>
+    <div class="portfolio-container">
+      <a href="https://brasilialuxuryhomes.com.br/" target="_blank" class="portfolio-item">
+        <img src="https://i.postimg.cc/rmfzyDt7/Screenshot_20260322_194707_2.jpg" alt="Brasília Luxury Homes">
+      </a>
+      <a href="https://biositeprofissionalsite-tech.github.io/Saborcaseiroselfservice/" target="_blank" class="portfolio-item">
+        <img src="https://i.postimg.cc/NMdLGKHw/Screenshot_20260322_194742_2.jpg" alt="Sabor Caseiro Self Service">
+      </a>
+    </div>
+  </section>
+
+  <!-- Clientes -->
+  <section id="clientes" class="clientes">
+    <h2>Comentários de Clientes</h2>
+    <div class="clientes-container">
+      <div class="cliente">
+        <img src="https://i.postimg.cc/qvVSRjrP/1774218475609.png" alt="Cliente 1">
+        <p>"Meu site ficou rápido, moderno e sem dor de cabeça! Recomendo a Bio Sites 100%." </p>
+      </div>
+      <div class="cliente">
+        <img src="https://i.postimg.cc/qvVSRjrZ/1774218521569.png" alt="Cliente 2">
+        <p>"Serviço excelente! Hospedagem inclusa e preço justo, muito recomendado."</p>
+      </div>
+      <div class="cliente">
+        <img src="https://i.postimg.cc/VkQp6DwG/1774218547955.png" alt="Cliente 3">
+        <p>"Design moderno, conteúdo otimizado e atendimento rápido. Super satisfeito!"</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="contato">
+    <h2>Fale Conosco</h2>
+    <img src="https://i.postimg.cc/t4QwT2bv/1774218591728.png" alt="Contato">
+    <p>Entre em contato direto pelo WhatsApp ou Instagram, tire suas dúvidas e solicite seu orçamento agora mesmo! Estamos prontos para ajudá-lo a transformar seu negócio com sites profissionais e modernos.</p>
+    <a href="https://wa.me/5561996213467" target="_blank" class="whatsapp">WhatsApp</a>
+    <a href="https://www.instagram.com/biosites.profissional/" target="_blank" class="instagram">Instagram</a>
+  </section>
+
+  <!-- Botão WhatsApp flutuante -->
+  <div class="whatsapp-btn" onclick="window.open('https://wa.me/5561996213467', '_blank')">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+  </div>
+
+  <!-- Rodapé -->
+  <footer>
+    © 2026 Bio Sites. Todos os direitos reservados. | Instagram: <a href="https://www.instagram.com/biosites.profissional/" target="_blank">@biosites.profissional</a>
+  </footer>
+
+</body>
+  </html>
